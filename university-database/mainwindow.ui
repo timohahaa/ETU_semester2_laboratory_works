@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16000</width>
+    <height>16000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="2">
+       <layout class="QVBoxLayout" name="group_add_form">
+        <item>
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>Добавить группу</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="group_number_form_add">
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>Номер группы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="group_number_add">
+            <property name="maxLength">
+             <number>8</number>
+            </property>
+            <property name="placeholderText">
+             <string>2375</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="group_department_form_add">
+          <item>
+           <widget class="QLabel" name="label_23">
+            <property name="text">
+             <string>Кафедра</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="group_department_name_add">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Полное название кафедры</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_add_group">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <layout class="QVBoxLayout" name="department_add_form">
+        <item>
+         <widget class="QLabel" name="label_25">
+          <property name="text">
+           <string>Добавить кафедру</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_name_form_add">
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Название кафедры</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_name_add">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Полное название кафедры</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_faculty_form_add">
+          <item>
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>Факультет</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_faculty_name_add">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Без слова &quot;Факультет&quot;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_31">
+          <property name="text">
+           <string>Заведующий кафедрой:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_head_name_form">
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Имя</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_head_name">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иван</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_head_surname_form">
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="text">
+             <string>Фамилия</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_head_surname">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванов</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_head_fathername_form">
+          <item>
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Отчество</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_head_fathername">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванович</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_add_department">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <layout class="QVBoxLayout" name="group_search_form">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Найти группу</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="group_number_form">
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Номер группы</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="group_number">
+            <property name="maxLength">
+             <number>8</number>
+            </property>
+            <property name="placeholderText">
+             <string>2375</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="group_department_form">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Кафедра (если нужно удалить)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="group_department_name">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Полное название кафедры</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="delete_group">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_find_group">
+          <property name="text">
+           <string>Найти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="2">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <layout class="QVBoxLayout" name="student_add_form">
+        <item>
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>Добавить студента</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_name_form_add">
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Имя студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_name_add">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иван</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_surname_form_add">
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Фамилия студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_surname_add">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванович</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_fathername_form_add">
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Отчество студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_fathername_add">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванов</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_group_form_add">
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>Группа</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_group_add">
+            <property name="maxLength">
+             <number>8</number>
+            </property>
+            <property name="placeholderText">
+             <string>2375</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_gender_form">
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>Пол</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="student_gender">
+            <item>
+             <widget class="QRadioButton" name="gender_male">
+              <property name="text">
+               <string>М</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">group_gender</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="gender_female">
+              <property name="text">
+               <string>Ж</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">group_gender</string>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="education_type_form">
+          <item>
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>Тип обучения</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="education_type">
+            <item>
+             <widget class="QRadioButton" name="education_free">
+              <property name="text">
+               <string>Бюджет</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">group_education</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="education_paid">
+              <property name="text">
+               <string>Контракт</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">group_education</string>
+              </attribute>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="education_special">
+              <property name="text">
+               <string>Целевое</string>
+              </property>
+              <attribute name="buttonGroup">
+               <string notr="true">group_education</string>
+              </attribute>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="head_student_form">
+          <item>
+           <widget class="QCheckBox" name="is_head_student_checker">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>Сделать старостой</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_add_student">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="3">
+       <widget class="Line" name="line_8">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <layout class="QVBoxLayout" name="department_search_form">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Найти кафедру</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_name_form">
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Название кафедры</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_name">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Полное название кафедры</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="department_faculty_form">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>Факультет (если нужно удалить)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="department_faculty_name">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Без слова &quot;Факультет&quot;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="delete_department">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_find_department">
+          <property name="text">
+           <string>Найти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="3">
+       <widget class="Line" name="line_7">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_6">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <layout class="QVBoxLayout" name="faculty_add_form">
+        <item>
+         <widget class="QLabel" name="label_32">
+          <property name="text">
+           <string>Добавить факультет</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_name_form_add">
+          <item>
+           <widget class="QLabel" name="label_33">
+            <property name="text">
+             <string>Название факультета</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_name_add">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Без слова &quot;Факультет&quot;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_id_form_add">
+          <item>
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Порядковый номер факультета в ВУЗе</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_id_add">
+            <property name="maxLength">
+             <number>4</number>
+            </property>
+            <property name="placeholderText">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_35">
+          <property name="text">
+           <string>Декан:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_head_name_form">
+          <item>
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>Имя</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_head_name">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иван</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_head_surname_form">
+          <item>
+           <widget class="QLabel" name="label_37">
+            <property name="text">
+             <string>Фамилия</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_head_surname">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванов</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_head_fathername_form">
+          <item>
+           <widget class="QLabel" name="label_38">
+            <property name="text">
+             <string>Отчество</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_head_fathername">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванович</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_add_faculty">
+          <property name="text">
+           <string>Добавить</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="6">
+       <layout class="QVBoxLayout" name="faculty_search_form">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Найти факультет</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_name_form">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>Название факультета</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_name">
+            <property name="maxLength">
+             <number>64</number>
+            </property>
+            <property name="placeholderText">
+             <string>Без слова &quot;Факультет&quot;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="faculty_id_form">
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Порядковый номер факультета в ВУЗе (если есть)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="faculty_id">
+            <property name="maxLength">
+             <number>4</number>
+            </property>
+            <property name="placeholderText">
+             <string>3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="delete_faculty">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_find_faculty">
+          <property name="text">
+           <string>Найти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="6">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="student_search_form">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Найти студента</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_name_form">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Имя студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_name">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иван</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_surname_form">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Фамилия студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_surname">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванович</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_fathername_form">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Отчество студента</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_fathername">
+            <property name="maxLength">
+             <number>20</number>
+            </property>
+            <property name="placeholderText">
+             <string>Иванов</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="student_group_form">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Группа (если нужно удалить)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="student_group">
+            <property name="maxLength">
+             <number>8</number>
+            </property>
+            <property name="placeholderText">
+             <string>2375</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="delete_student">
+          <property name="text">
+           <string>Удалить</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="button_find_student">
+          <property name="text">
+           <string>Найти</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="4">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="Line" name="line_9">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="Line" name="line_10">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="output_layout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="button_university_info">
+          <property name="text">
+           <string>Показать информацию об университете</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="output_form">
+        <item>
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>Вывод результата:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="output_display"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableWidget" name="table"/>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="group_gender"/>
+  <buttongroup name="group_education"/>
+ </buttongroups>
+</ui>
